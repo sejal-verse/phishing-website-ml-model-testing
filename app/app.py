@@ -694,40 +694,6 @@ FEATURE_IMPORTANCE_IMAGE = (
     / "feature_importance.png"
 )
 
-# --------------------------------------------------
-# Project Workflow
-# --------------------------------------------------
-
-st.divider()
-
-st.header("🧭 Project Workflow")
-
-st.write(
-    "The project follows a systematic machine-learning workflow "
-    "from dataset exploration to final model evaluation."
-)
-
-workflow_steps = [
-    ("1️⃣ Dataset", "Loaded the UCI Phishing Websites dataset."),
-    ("2️⃣ EDA", "Explored the dataset and examined feature patterns."),
-    ("3️⃣ Preprocessing", "Prepared the dataset for machine-learning models."),
-    ("4️⃣ Baseline Model", "Trained a Decision Tree as the baseline model."),
-    ("5️⃣ Model Comparison", "Compared multiple machine-learning algorithms."),
-    ("6️⃣ Error Analysis", "Examined incorrect phishing and legitimate predictions."),
-    ("7️⃣ Robustness Testing", "Tested how model predictions changed under feature perturbation."),
-    ("8️⃣ Feature Importance", "Analyzed which features influenced the Decision Tree."),
-    ("9️⃣ Model Improvement", "Tested Decision Tree hyperparameters."),
-    ("🔟 Final Evaluation", "Compared final model performance using multiple metrics."),
-    ("1️⃣1️⃣ Interactive App", "Built this Streamlit interface for model demonstration."),
-]
-
-
-for step, description in workflow_steps:
-
-    with st.expander(step):
-
-        st.write(description)
-
 
 # --------------------------------------------------
 # Feature Importance Table
@@ -830,4 +796,5 @@ for step, description in workflow_steps:
 
     with st.expander(step):
         st.write(description)
+        
         
